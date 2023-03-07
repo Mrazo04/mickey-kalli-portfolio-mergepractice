@@ -1,0 +1,49 @@
+#contact{
+    height: 100%;
+    transition: transform 350ms ease;
+}
+
+#contact:hover {
+    transform: scale(1,3);
+}
+
+#contact a:active {
+  animation: change-text 2s ease infinite;
+}
+
+#about {
+    transition: transform 350ms ease;
+  }
+  
+  #about:hover {
+    transform: rotate3d(3, 2, 2, 20deg) translateZ(70px);
+  }
+  
+  #about a:active {
+    animation: change-text 1s ease infinite;
+  }
+  
+  #portfolio {
+    transition: transform 350ms ease;
+  }
+  
+  #portfolio:hover {
+    transform: skew(10deg, 10deg);
+  }
+  
+  #portfolio a:active {
+    animation: change-text 1s ease infinite;
+  }
+
+@keyframes change-text {
+    0% {
+      background: #69b7eb;
+    }
+    50% {
+      background: #b3dbd3;
+      font-size: 3em;
+    }
+    100% {
+      background: #f4d6db;
+    }
+  }
